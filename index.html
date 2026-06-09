@@ -1606,6 +1606,7 @@
 <footer class="footer">
   བློ་གྲོས་རྒྱ་མཚོས་སྒྲིག་བཟོ་བྱས།<br>
   FIFA World Cup 2026 · United 2026 · 数据来源：FIFA / 腾讯新闻 / 央视网 · 页面生成于 2026 年 6 月 9 日
+  <br><span style="font-size:0.75rem;opacity:0.6;">📊 页面访问量：<span id="visit-count">--</span> 次</span>
 </footer>
 
 <script>
@@ -3657,6 +3658,24 @@ document.querySelectorAll('.nav a').forEach(link => {
     <div class="roster-modal-body" id="modalBody"></div>
   </div>
 </div>
+
+<script>
+// Visit counter via CountAPI
+(function(){
+  var ns = '2026-world-cup-838';
+  var key = 'visits';
+  var el = document.getElementById('visit-count');
+  fetch('https://api.countapi.xyz/hit/' + ns + '/' + key)
+    .then(function(r){return r.json();})
+    .then(function(d){
+      var suffixes = ['', '万', '亿'];
+      var n = d.value, si = 0;
+      while(n >= 10000 && si < suffixes.length - 1){ n /= 10000; si++; }
+      el.textContent = (si === 0 ? n : n.toFixed(1)) + suffixes[si];
+    })
+    .catch(function(){ el.textContent = '--'; });
+})();
+</script>
 
 </body>
 </html>
