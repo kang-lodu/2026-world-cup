@@ -174,6 +174,22 @@
   }
 
   .nav a:hover { color: var(--grass); background: var(--grass-light); }
+  .nav .live-btn {
+    background: linear-gradient(135deg, #e62429, #ff4d4d);
+    color: #fff !important;
+    border-radius: 8px;
+    padding: 0.4rem 0.9rem;
+    animation: livePulse 2s ease-in-out infinite;
+  }
+  .nav .live-btn:hover {
+    background: linear-gradient(135deg, #ff4d4d, #e62429);
+    color: #fff !important;
+    box-shadow: 0 0 18px rgba(230,36,41,0.5);
+  }
+  @keyframes livePulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(230,36,41,0.4); }
+    50% { box-shadow: 0 0 0 8px rgba(230,36,41,0); }
+  }
 
   /* Section */
   .section {
@@ -960,6 +976,7 @@
 <!-- Nav -->
 <nav class="nav">
   <div class="nav-inner">
+    <a href="#live" class="live-btn">བརྙན་འཕྲིན་བརྒྱུད་ལམ། · 直播入口</a>
     <a href="#prematch">འགྲན་སྡུར་སྔོན་གྱི་གནས་ཚུལ། · 赛前动态</a>
     <a href="#live-report">དུས་ཐོག་བསྡུར་འབྲས། · 实时战报</a>
     <a href="#groups">ཚོ་ཆུང་སོ་སོའི་མིང་ཐོ། · 分组一览</a>
@@ -969,6 +986,52 @@
     <a href="#stadiums">ལུས་རྩལ་ར་བ་རྩེ་གྲ་བཅུ་དྲུག · 球场</a>
   </div>
 </nav>
+
+<section class="section" id="live">
+  <div class="section-header">
+    <div class="section-icon">🔴</div>
+    <h2 class="section-title">བརྙན་འཕྲིན་བརྒྱུད་ལམ།<br>直播 <span class="hl">入口</span></h2>
+    <p class="section-subtitle">全部 104 场免费直播 · 点击即看 · 无需登录</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;max-width:1000px;margin:0 auto;">
+    <a href="https://tv.cctv.com/live/cctv5/" target="_blank" style="text-decoration:none;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.4rem;display:flex;align-items:center;gap:1rem;transition:all 0.2s;" onmouseover="this.style.borderColor='rgba(0,210,255,0.5)';this.style.background='rgba(0,210,255,0.08)';" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.background='rgba(255,255,255,0.06)';">
+      <span style="font-size:2.4rem;">📺</span>
+      <div>
+        <div style="font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:0.2rem;">央视 CCTV-5 直播</div>
+        <div style="font-size:0.82rem;color:#888;">电视同步 · 全场次 · 贺炜解说</div>
+      </div>
+    </a>
+    <a href="https://yangshipin.cn" target="_blank" style="text-decoration:none;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.4rem;display:flex;align-items:center;gap:1rem;transition:all 0.2s;" onmouseover="this.style.borderColor='rgba(0,210,255,0.5)';this.style.background='rgba(0,210,255,0.08)';" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.background='rgba(255,255,255,0.06)';">
+      <span style="font-size:2.4rem;">📱</span>
+      <div>
+        <div style="font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:0.2rem;">央视频 App</div>
+        <div style="font-size:0.82rem;color:#888;">4K 超清 · 全场次回看 · 无需会员</div>
+      </div>
+    </a>
+    <a href="https://www.miguvideo.com" target="_blank" style="text-decoration:none;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.4rem;display:flex;align-items:center;gap:1rem;transition:all 0.2s;" onmouseover="this.style.borderColor='rgba(0,210,255,0.5)';this.style.background='rgba(0,210,255,0.08)';" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.background='rgba(255,255,255,0.06)';">
+      <span style="font-size:2.4rem;">🎯</span>
+      <div>
+        <div style="font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:0.2rem;">咪咕视频</div>
+        <div style="font-size:0.82rem;color:#888;">4K/8K · 詹俊/张路解说 · 多视角</div>
+      </div>
+    </a>
+    <a href="https://www.xiaohongshu.com" target="_blank" style="text-decoration:none;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.4rem;display:flex;align-items:center;gap:1rem;transition:all 0.2s;" onmouseover="this.style.borderColor='rgba(0,210,255,0.5)';this.style.background='rgba(0,210,255,0.08)';" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.background='rgba(255,255,255,0.06)';">
+      <span style="font-size:2.4rem;">💬</span>
+      <div>
+        <div style="font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:0.2rem;">小红书</div>
+        <div style="font-size:0.82rem;color:#888;">范志毅解说 · 社区互动 · 全场次</div>
+      </div>
+    </a>
+    <a href="https://www.cctv.com" target="_blank" style="text-decoration:none;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.4rem;display:flex;align-items:center;gap:1rem;transition:all 0.2s;" onmouseover="this.style.borderColor='rgba(0,210,255,0.5)';this.style.background='rgba(0,210,255,0.08)';" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.background='rgba(255,255,255,0.06)';">
+      <span style="font-size:2.4rem;">💻</span>
+      <div>
+        <div style="font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:0.2rem;">央视网（电脑端）</div>
+        <div style="font-size:0.82rem;color:#888;">网页直达 · 无需 APP · CCTV-5/CCTV-5+</div>
+      </div>
+    </a>
+  </div>
+  <p style="text-align:center;color:#555;font-size:0.78rem;margin-top:1.5rem;">⚡ 中国大陆全部 104 场比赛均为免费直播 · 央视系 / 咪咕 / 小红书 三大官方平台 · 避开抖音/腾讯/爱奇艺（无版权）</p>
+</section>
 
 <section class="section" id="prematch">
   <div class="section-header">
