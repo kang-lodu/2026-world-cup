@@ -169,14 +169,21 @@
     font-weight: 600;
     padding: 0.45rem 0.9rem;
     border-radius: 8px;
+    border: 1px solid rgba(230,36,41,0.2);
     transition: all 0.2s;
     white-space: nowrap;
+    animation: navPulse 3s ease-in-out infinite;
   }
 
-  .nav a:hover { color: var(--grass); background: var(--grass-light); }
+  .nav a:hover { color: var(--grass); background: var(--grass-light); border-color: rgba(230,36,41,0.6); box-shadow: 0 0 10px rgba(230,36,41,0.2); }
+  @keyframes navPulse {
+    0%, 100% { border-color: rgba(230,36,41,0.15); }
+    50% { border-color: rgba(230,36,41,0.35); }
+  }
   .nav .live-btn {
     background: linear-gradient(135deg, #e62429, #ff4d4d);
     color: #fff !important;
+    border: none;
     border-radius: 8px;
     padding: 0.4rem 0.9rem;
     animation: livePulse 2s ease-in-out infinite;
