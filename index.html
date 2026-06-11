@@ -163,27 +163,45 @@
   }
 
   .nav a {
-    background: linear-gradient(135deg, #e62429, #ff4d4d);
-    color: #fff;
     text-decoration: none;
     font-size: 0.82rem;
     font-weight: 600;
     padding: 0.4rem 0.9rem;
     border-radius: 8px;
-    border: none;
     transition: all 0.2s;
     white-space: nowrap;
-    animation: livePulse 2s ease-in-out infinite;
+    background: transparent;
+    color: #1a1a1a;
+    border: 2px solid #e62429;
+    animation: borderPulse 2s ease-in-out infinite;
   }
 
   .nav a:hover {
+    color: #e62429;
+    border-color: #cc1f24;
+  }
+
+  .nav a.live-entry {
+    background: linear-gradient(135deg, #e62429, #ff4d4d);
+    color: #fff;
+    border: none;
+    animation: livePulse 2s ease-in-out infinite;
+  }
+
+  .nav a.live-entry:hover {
     background: linear-gradient(135deg, #ff4d4d, #e62429);
     color: #fff;
     box-shadow: 0 0 18px rgba(230,36,41,0.5);
   }
+
   @keyframes livePulse {
     0%, 100% { box-shadow: 0 0 0 0 rgba(230,36,41,0.4); }
     50% { box-shadow: 0 0 0 8px rgba(230,36,41,0); }
+  }
+
+  @keyframes borderPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(230,36,41,0.35); }
+    50% { box-shadow: 0 0 0 6px rgba(230,36,41,0); }
   }
 
   /* Section */
@@ -973,7 +991,7 @@
   <div class="nav-inner">
     <a href="#prematch">འགྲན་སྡུར་སྔོན་གྱི་གནས་ཚུལ། · 赛前动态</a>
     <a href="#live-report">དུས་ཐོག་བསྡུར་འབྲས། · 实时战报</a>
-    <a href="#live">བརྙན་འཕྲིན་བརྒྱུད་ལམ། · 直播入口</a>
+    <a href="#live" class="live-entry">བརྙན་འཕྲིན་བརྒྱུད་ལམ། · 直播入口</a>
     <a href="#groups">ཚོ་ཆུང་སོ་སོའི་མིང་ཐོ། · 分组一览</a>
     <a href="#schedule">ཚོ་ཆུང་གི་འགྲན་རིམ་ཆ་ཚང་། · 小组赛程</a>
     <a href="#knockout">བསྐྱར་འགྲན་གྱི་རིམ་པ། · 淘汰赛</a>
