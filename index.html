@@ -1006,10 +1006,202 @@
     <p class="section-subtitle">比分 · 积分榜 · 射手榜 · 淘汰赛对阵 · 每日 04:00 自动更新</p>
   </div>
 
-  <div style="text-align: center; padding: 3rem 1rem; color: var(--text-dim);">
-    <div style="font-size: 2.5rem; margin-bottom: 1rem;">⚽</div>
-    <p style="font-size: 1.1rem; font-weight: 600; color: var(--text);">6 月 12 日揭幕战后开始更新</p>
-    <p style="font-size: 0.85rem; margin-top: 0.5rem;">小组积分、比赛比分、射手榜、淘汰赛对阵将在此展示</p>
+  <!-- 今日赛果 -->
+  <div style="max-width:1100px;margin:0 auto;padding:0 1.5rem;">
+    <div style="background:var(--card-bg);border-radius:12px;border:1px solid var(--border);padding:1.5rem;margin-bottom:1.5rem;box-shadow:var(--shadow);">
+      <h3 style="font-size:1.1rem;font-weight:800;color:var(--grass-dark);margin-bottom:1rem;display:flex;align-items:center;gap:0.5rem;"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#e62429;animation:livePulse 1.5s ease-in-out infinite;"></span> དེ་རིང་གི་འགྲན་འབྲས། · 今日赛果 <span style="font-size:0.7rem;color:var(--text-light);font-weight:400;">6月12日 更新于揭幕战后</span></h3>
+      <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+        <thead>
+          <tr style="border-bottom:2px solid var(--grass-light);">
+            <th style="padding:0.6rem 0.8rem;text-align:left;font-size:0.75rem;color:var(--text-light);font-weight:600;">组别</th>
+            <th style="padding:0.6rem 0.8rem;text-align:left;font-size:0.75rem;color:var(--text-light);font-weight:600;">时间</th>
+            <th style="padding:0.6rem 0.8rem;text-align:center;font-size:0.75rem;color:var(--text-light);font-weight:600;">主队</th>
+            <th style="padding:0.6rem 0.8rem;text-align:center;font-size:0.75rem;color:var(--text-light);font-weight:600;">比分</th>
+            <th style="padding:0.6rem 0.8rem;text-align:center;font-size:0.75rem;color:var(--text-light);font-weight:600;">客队</th>
+            <th style="padding:0.6rem 0.8rem;text-align:left;font-size:0.75rem;color:var(--text-light);font-weight:600;">进球</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #f0f0ec;">
+            <td style="padding:0.7rem 0.8rem;"><span style="display:inline-block;padding:0.15rem 0.45rem;border-radius:3px;font-size:0.7rem;font-weight:700;color:#fff;background:var(--grass);">A</span></td>
+            <td style="padding:0.7rem 0.8rem;font-weight:600;color:var(--grass-dark);white-space:nowrap;">03:00</td>
+            <td style="padding:0.7rem 0.8rem;text-align:center;font-weight:600;">🇲🇽 墨西哥</td>
+            <td style="padding:0.7rem 0.8rem;text-align:center;"><span style="display:inline-block;padding:0.25rem 0.7rem;border-radius:6px;font-weight:800;font-size:1rem;background:var(--grass-light);color:var(--grass-dark);">1 - 0</span></td>
+            <td style="padding:0.7rem 0.8rem;text-align:center;font-weight:600;">🇿🇦 南非</td>
+            <td style="padding:0.7rem 0.8rem;font-size:0.8rem;color:var(--text-dim);">基尼奥内斯 9'</td>
+          </tr>
+          <tr>
+            <td style="padding:0.7rem 0.8rem;"><span style="display:inline-block;padding:0.15rem 0.45rem;border-radius:3px;font-size:0.7rem;font-weight:700;color:#fff;background:var(--grass);">A</span></td>
+            <td style="padding:0.7rem 0.8rem;font-weight:600;color:var(--grass-dark);white-space:nowrap;">10:00</td>
+            <td style="padding:0.7rem 0.8rem;text-align:center;font-weight:600;">🇰🇷 韩国</td>
+            <td style="padding:0.7rem 0.8rem;text-align:center;"><span style="display:inline-block;padding:0.25rem 0.7rem;border-radius:6px;font-weight:700;font-size:0.9rem;color:var(--text-dim);background:#f5f5f0;">vs</span></td>
+            <td style="padding:0.7rem 0.8rem;text-align:center;font-weight:600;">🇨🇿 捷克</td>
+            <td style="padding:0.7rem 0.8rem;font-size:0.8rem;color:var(--text-light);">待进行</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.75rem;color:var(--text-light);margin-top:0.8rem;">揭幕战：墨西哥城阿兹特克体育场 · 基尼奥内斯打入本届世界杯首球，终结墨西哥揭幕战不胜魔咒</p>
+    </div>
+
+    <!-- 小组积分榜 + 射手榜 -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:1.5rem;">
+      <!-- 积分榜 -->
+      <div style="background:var(--card-bg);border-radius:12px;border:1px solid var(--border);padding:1.5rem;box-shadow:var(--shadow);">
+        <h3 style="font-size:1.1rem;font-weight:800;color:var(--grass-dark);margin-bottom:1rem;">སྐར་མའི་རྩིས་བྱང་། · 小组积分榜</h3>
+        <div style="margin-bottom:1.2rem;">
+          <div style="font-size:0.85rem;font-weight:700;color:var(--grass);margin-bottom:0.5rem;">A 组</div>
+          <table style="width:100%;border-collapse:collapse;font-size:0.82rem;">
+            <thead>
+              <tr style="border-bottom:1px solid #e0e0d8;">
+                <th style="padding:0.4rem 0.5rem;text-align:left;font-size:0.7rem;color:var(--text-light);">#</th>
+                <th style="padding:0.4rem 0.5rem;text-align:left;font-size:0.7rem;color:var(--text-light);">球队</th>
+                <th style="padding:0.4rem 0.5rem;text-align:center;font-size:0.7rem;color:var(--text-light);">场</th>
+                <th style="padding:0.4rem 0.5rem;text-align:center;font-size:0.7rem;color:var(--text-light);">胜</th>
+                <th style="padding:0.4rem 0.5rem;text-align:center;font-size:0.7rem;color:var(--text-light);">平</th>
+                <th style="padding:0.4rem 0.5rem;text-align:center;font-size:0.7rem;color:var(--text-light);">负</th>
+                <th style="padding:0.4rem 0.5rem;text-align:center;font-size:0.7rem;color:var(--text-light);">进/失</th>
+                <th style="padding:0.4rem 0.5rem;text-align:center;font-size:0.7rem;color:var(--text-light);">净</th>
+                <th style="padding:0.4rem 0.5rem;text-align:center;font-size:0.7rem;color:var(--text-light);">分</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid #f2f2ee;font-weight:700;background:#e8f5e9;">
+                <td style="padding:0.45rem 0.5rem;">1</td>
+                <td style="padding:0.45rem 0.5rem;">🇲🇽 墨西哥</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">1</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">1</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">1/0</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">+1</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;color:var(--grass);font-weight:800;">3</td>
+              </tr>
+              <tr style="border-bottom:1px solid #f2f2ee;">
+                <td style="padding:0.45rem 0.5rem;">2</td>
+                <td style="padding:0.45rem 0.5rem;">🇰🇷 韩国</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0/0</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0</td>
+              </tr>
+              <tr style="border-bottom:1px solid #f2f2ee;">
+                <td style="padding:0.45rem 0.5rem;">3</td>
+                <td style="padding:0.45rem 0.5rem;">🇨🇿 捷克</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0/0</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0</td>
+              </tr>
+              <tr>
+                <td style="padding:0.45rem 0.5rem;">4</td>
+                <td style="padding:0.45rem 0.5rem;">🇿🇦 南非</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">1</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">1</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0/1</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">-1</td>
+                <td style="padding:0.45rem 0.5rem;text-align:center;">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:0.72rem;color:var(--text-light);border-top:1px solid #e0e0d8;padding-top:0.6rem;">B-L 组尚未开赛 · 6月13日起陆续展开 · <span style="background:rgba(27,138,61,0.08);padding:0.1rem 0.4rem;border-radius:3px;">晋级：每组前2 + 8个最佳第3 → 32强</span></p>
+      </div>
+
+      <!-- 射手榜 -->
+      <div style="background:var(--card-bg);border-radius:12px;border:1px solid var(--border);padding:1.5rem;box-shadow:var(--shadow);">
+        <h3 style="font-size:1.1rem;font-weight:800;color:var(--gold-dark);margin-bottom:1rem;">འཕེན་མཁན་གྱི་མིང་ཐོ། · 射手榜</h3>
+        <table style="width:100%;border-collapse:collapse;font-size:0.85rem;">
+          <thead>
+            <tr style="border-bottom:2px solid #fef3c7;">
+              <th style="padding:0.5rem 0.6rem;text-align:left;font-size:0.7rem;color:var(--text-light);">#</th>
+              <th style="padding:0.5rem 0.6rem;text-align:left;font-size:0.7rem;color:var(--text-light);">球员</th>
+              <th style="padding:0.5rem 0.6rem;text-align:left;font-size:0.7rem;color:var(--text-light);">球队</th>
+              <th style="padding:0.5rem 0.6rem;text-align:center;font-size:0.7rem;color:var(--text-light);">进球</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid #f2f2ee;background:#fffef7;">
+              <td style="padding:0.55rem 0.6rem;font-weight:800;color:var(--gold);">🥇</td>
+              <td style="padding:0.55rem 0.6rem;font-weight:600;">基尼奥内斯</td>
+              <td style="padding:0.55rem 0.6rem;font-size:0.8rem;color:var(--text-dim);">🇲🇽 墨西哥</td>
+              <td style="padding:0.55rem 0.6rem;text-align:center;font-weight:800;color:var(--gold-dark);">1</td>
+            </tr>
+          </tbody>
+        </table>
+        <div style="margin-top:1.2rem;padding:0.8rem;background:#f9faf7;border-radius:8px;font-size:0.75rem;color:var(--text-dim);line-height:1.6;">
+          <p style="font-weight:600;color:var(--text);margin-bottom:0.4rem;">金靴奖热门候选（FIFA官方 6月11日）</p>
+          <p>1. 姆巴佩 🇫🇷 · 2. 凯恩 🏴󠁧󠁢󠁥󠁮󠁧󠁿 · 3. 哈兰德 🇳🇴 · 4. 梅西 🇦🇷 · 5. C罗 🇵🇹</p>
+          <p style="margin-top:0.3rem;">世界杯历史进球榜：克洛泽 16 球 | 梅西 13 球 | 姆巴佩 12 球</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 淘汰赛对阵 -->
+    <div style="background:var(--card-bg);border-radius:12px;border:1px solid var(--border);padding:1.5rem;margin-bottom:1.5rem;box-shadow:var(--shadow);">
+      <h3 style="font-size:1.1rem;font-weight:800;color:var(--grass-dark);margin-bottom:1rem;">བསྐྱར་འགྲན་གྱི་འགྲན་ཞུགས། · 淘汰赛对阵</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0.8rem;">
+        <div style="padding:0.9rem;border-radius:8px;border:1px solid var(--border);background:#f9faf7;">
+          <div style="font-size:0.7rem;font-weight:700;color:var(--grass);text-transform:uppercase;margin-bottom:0.3rem;">32 强赛</div>
+          <div style="font-size:0.85rem;font-weight:600;">6月29日 — 7月4日</div>
+          <div style="font-size:0.75rem;color:var(--text-light);margin-top:0.3rem;">16 场比赛 · 待小组赛结束后确定对阵</div>
+        </div>
+        <div style="padding:0.9rem;border-radius:8px;border:1px solid var(--border);background:#f9faf7;">
+          <div style="font-size:0.7rem;font-weight:700;color:var(--grass);text-transform:uppercase;margin-bottom:0.3rem;">16 强赛</div>
+          <div style="font-size:0.85rem;font-weight:600;">7月5日 — 7月8日</div>
+          <div style="font-size:0.75rem;color:var(--text-light);margin-top:0.3rem;">8 场比赛</div>
+        </div>
+        <div style="padding:0.9rem;border-radius:8px;border:1px solid var(--border);background:#f9faf7;">
+          <div style="font-size:0.7rem;font-weight:700;color:var(--grass);text-transform:uppercase;margin-bottom:0.3rem;">1/4 决赛</div>
+          <div style="font-size:0.85rem;font-weight:600;">7月10日 — 7月12日</div>
+          <div style="font-size:0.75rem;color:var(--text-light);margin-top:0.3rem;">4 场比赛</div>
+        </div>
+        <div style="padding:0.9rem;border-radius:8px;border:1px solid var(--border);background:#f9faf7;">
+          <div style="font-size:0.7rem;font-weight:700;color:var(--grass);text-transform:uppercase;margin-bottom:0.3rem;">半决赛</div>
+          <div style="font-size:0.85rem;font-weight:600;">7月15日 — 7月16日</div>
+          <div style="font-size:0.75rem;color:var(--text-light);margin-top:0.3rem;">2 场比赛</div>
+        </div>
+        <div style="padding:0.9rem;border-radius:8px;border:1px solid var(--gold);background:linear-gradient(135deg,#fffef7,#fffdf0);">
+          <div style="font-size:0.7rem;font-weight:700;color:var(--gold);text-transform:uppercase;margin-bottom:0.3rem;">季军赛</div>
+          <div style="font-size:0.85rem;font-weight:600;">7月19日</div>
+        </div>
+        <div style="padding:0.9rem;border-radius:8px;border:2px solid var(--gold);background:linear-gradient(135deg,#fffef7,#fffdf0);">
+          <div style="font-size:0.7rem;font-weight:700;color:var(--gold);text-transform:uppercase;margin-bottom:0.3rem;">🏆 决赛</div>
+          <div style="font-size:0.85rem;font-weight:600;">7月20日 · MetLife 体育场</div>
+          <div style="font-size:0.75rem;color:var(--text-light);margin-top:0.3rem;">新泽西东卢瑟福</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 即将进行的比赛 -->
+    <div style="background:var(--card-bg);border-radius:12px;border:1px solid var(--border);padding:1.5rem;box-shadow:var(--shadow);">
+      <h3 style="font-size:1.1rem;font-weight:800;color:var(--grass-dark);margin-bottom:1rem;">ཉེ་ཆར་འགྲན་རྒྱག་རྒྱུའི་འགྲན་འབྲས། · 即将进行</h3>
+      <table style="width:100%;border-collapse:collapse;font-size:0.85rem;">
+        <thead>
+          <tr style="border-bottom:2px solid var(--grass-light);">
+            <th style="padding:0.5rem 0.6rem;text-align:left;font-size:0.7rem;color:var(--text-light);">日期</th>
+            <th style="padding:0.5rem 0.6rem;text-align:left;font-size:0.7rem;color:var(--text-light);">时间</th>
+            <th style="padding:0.5rem 0.6rem;text-align:left;font-size:0.7rem;color:var(--text-light);">组别</th>
+            <th style="padding:0.5rem 0.6rem;text-align:left;font-size:0.7rem;color:var(--text-light);">对阵</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #f0f0ec;"><td style="padding:0.5rem 0.6rem;">6/13</td><td style="padding:0.5rem 0.6rem;font-weight:600;color:var(--grass-dark);">03:00</td><td style="padding:0.5rem 0.6rem;"><span style="display:inline-block;padding:0.1rem 0.35rem;border-radius:3px;font-size:0.65rem;font-weight:700;color:#fff;background:var(--grass);">B</span></td><td style="padding:0.5rem 0.6rem;font-weight:500;">🇨🇦 加拿大 vs 🇧🇦 波黑</td></tr>
+          <tr style="border-bottom:1px solid #f0f0ec;"><td style="padding:0.5rem 0.6rem;">6/13</td><td style="padding:0.5rem 0.6rem;font-weight:600;color:var(--grass-dark);">09:00</td><td style="padding:0.5rem 0.6rem;"><span style="display:inline-block;padding:0.1rem 0.35rem;border-radius:3px;font-size:0.65rem;font-weight:700;color:#fff;background:var(--grass);">D</span></td><td style="padding:0.5rem 0.6rem;font-weight:500;">🇺🇸 美国 vs 🇵🇾 巴拉圭</td></tr>
+          <tr style="border-bottom:1px solid #f0f0ec;"><td style="padding:0.5rem 0.6rem;">6/14</td><td style="padding:0.5rem 0.6rem;font-weight:600;color:var(--grass-dark);">03:00</td><td style="padding:0.5rem 0.6rem;"><span style="display:inline-block;padding:0.1rem 0.35rem;border-radius:3px;font-size:0.65rem;font-weight:700;color:#fff;background:var(--grass);">B</span></td><td style="padding:0.5rem 0.6rem;font-weight:500;">🇶🇦 卡塔尔 vs 🇨🇭 瑞士</td></tr>
+          <tr style="border-bottom:1px solid #f0f0ec;"><td style="padding:0.5rem 0.6rem;">6/14</td><td style="padding:0.5rem 0.6rem;font-weight:600;color:var(--grass-dark);">06:00</td><td style="padding:0.5rem 0.6rem;"><span style="display:inline-block;padding:0.1rem 0.35rem;border-radius:3px;font-size:0.65rem;font-weight:700;color:#fff;background:var(--grass);">C</span></td><td style="padding:0.5rem 0.6rem;font-weight:500;">🇧🇷 巴西 vs 🇲🇦 摩洛哥</td></tr>
+          <tr><td style="padding:0.5rem 0.6rem;">6/14</td><td style="padding:0.5rem 0.6rem;font-weight:600;color:var(--grass-dark);">09:00</td><td style="padding:0.5rem 0.6rem;"><span style="display:inline-block;padding:0.1rem 0.35rem;border-radius:3px;font-size:0.65rem;font-weight:700;color:#fff;background:var(--grass);">C</span></td><td style="padding:0.5rem 0.6rem;font-weight:500;">🇭🇹 海地 vs 🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.72rem;color:var(--text-light);margin-top:0.6rem;text-align:center;">全部时间均为北京时间 · 数据持续更新中</p>
+    </div>
   </div>
 </section>
 <section class="section" id="live">
