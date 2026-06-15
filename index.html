@@ -2149,46 +2149,59 @@
   <div class="section-header">
     <div class="section-icon">🔴</div>
     <h2 class="section-title">བརྙན་འཕྲིན་བརྒྱུད་ལམ།<br>直播 <span class="hl">入口</span></h2>
-    <p class="section-subtitle">全部 104 场免费直播 · 点击即看 · 无需登录</p>
+    <p class="section-subtitle">全部 104 场免费直播 · 多平台同步 · 点击即看</p>
   </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;max-width:1000px;margin:0 auto;">
-    <a href="https://tv.cctv.com/live/cctv5/" target="_blank" style="text-decoration:none;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.4rem;display:flex;align-items:center;gap:1rem;transition:all 0.2s;" onmouseover="this.style.borderColor='rgba(0,210,255,0.5)';this.style.background='rgba(0,210,255,0.08)';" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.background='rgba(255,255,255,0.06)';">
-      <span style="font-size:2.4rem;">📺</span>
-      <div>
-        <div style="font-size:1.05rem;font-weight:700;color:#1a1a1a;margin-bottom:0.2rem;">央视 CCTV-5 直播</div>
-        <div style="font-size:0.82rem;color:#888;">电视同步 · 全场次 · 贺炜解说</div>
-      </div>
+
+  <style>
+    .live-platforms { display:grid; grid-template-columns:repeat(4, 1fr); gap:0.75rem; max-width:900px; margin:0 auto 1.2rem auto; }
+    .live-platforms a { text-decoration:none; background:var(--card-bg); border:1px solid var(--border); border-radius:10px; padding:1rem 0.9rem; display:flex; flex-direction:column; align-items:center; gap:0.35rem; transition:all 0.2s; box-shadow:var(--shadow); }
+    .live-platforms a:hover { transform:translateY(-2px); box-shadow:var(--shadow-hover); border-color:var(--grass); }
+    .live-platforms .lp-icon { width:40px; height:40px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.3rem; font-weight:800; }
+    .live-platforms .lp-name { font-size:0.9rem; font-weight:700; color:var(--text); }
+    .live-platforms .lp-desc { font-size:0.7rem; color:var(--text-light); text-align:center; line-height:1.35; }
+    .live-featured { max-width:900px; margin:0 auto 1rem auto; }
+    .live-featured a { text-decoration:none; display:flex; align-items:center; gap:1rem; background:linear-gradient(135deg,#fff5f5,#fff); border:1.5px solid #e62429; border-radius:12px; padding:1rem 1.2rem; transition:all 0.2s; box-shadow:0 0 0 0 rgba(230,36,41,0.15); animation:liveFeatPulse 2.5s ease-in-out infinite; }
+    .live-featured a:hover { box-shadow:0 4px 20px rgba(230,36,41,0.2); }
+    .live-featured .lf-badge { background:#e62429; color:#fff; font-size:0.7rem; font-weight:700; padding:0.2rem 0.55rem; border-radius:4px; white-space:nowrap; }
+    .live-featured .lf-title { font-size:0.95rem; font-weight:700; color:var(--text); flex:1; }
+    .live-featured .lf-arrow { color:#e62429; font-size:1.1rem; font-weight:700; }
+    @keyframes liveFeatPulse { 0%,100% { box-shadow:0 0 0 0 rgba(230,36,41,0.12); } 50% { box-shadow:0 0 0 6px rgba(230,36,41,0); } }
+    .live-note { text-align:center; color:var(--text-dim); font-size:0.75rem; margin-top:0.5rem; }
+    @media (max-width:640px) { .live-platforms { grid-template-columns:repeat(2,1fr); } }
+  </style>
+
+  <div class="live-platforms">
+    <a href="https://tv.cctv.com/live/cctv5/" target="_blank">
+      <div class="lp-icon" style="background:#f0f4ff;color:#1a56db;">📺</div>
+      <div class="lp-name">CCTV-5</div>
+      <div class="lp-desc">电视同步 · 贺炜解说</div>
     </a>
-    <a href="https://www.yangshipin.cn/live/detail?pid=600223883" target="_blank" style="text-decoration:none;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.4rem;display:flex;align-items:center;gap:1rem;transition:all 0.2s;" onmouseover="this.style.borderColor='rgba(0,210,255,0.5)';this.style.background='rgba(0,210,255,0.08)';" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.background='rgba(255,255,255,0.06)';">
-      <span style="font-size:2.4rem;">📱</span>
-      <div>
-        <div style="font-size:1.05rem;font-weight:700;color:#1a1a1a;margin-bottom:0.2rem;">央视频 · 西班牙 vs 佛得角</div>
-        <div style="font-size:0.82rem;color:#888;">4K 超清 · 全场次回看 · 无需会员</div>
-      </div>
+    <a href="https://www.yangshipin.cn/" target="_blank">
+      <div class="lp-icon" style="background:#fff5f0;color:#e64a19;">📱</div>
+      <div class="lp-name">央视频</div>
+      <div class="lp-desc">4K 超清 · 全场次回看</div>
     </a>
-    <a href="https://www.miguvideo.com" target="_blank" style="text-decoration:none;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.4rem;display:flex;align-items:center;gap:1rem;transition:all 0.2s;" onmouseover="this.style.borderColor='rgba(0,210,255,0.5)';this.style.background='rgba(0,210,255,0.08)';" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.background='rgba(255,255,255,0.06)';">
-      <span style="font-size:2.4rem;">🎯</span>
-      <div>
-        <div style="font-size:1.05rem;font-weight:700;color:#1a1a1a;margin-bottom:0.2rem;">咪咕视频</div>
-        <div style="font-size:0.82rem;color:#888;">4K/8K · 詹俊/张路解说 · 多视角</div>
-      </div>
+    <a href="https://www.miguvideo.com" target="_blank">
+      <div class="lp-icon" style="background:#f3f0ff;color:#6d28d9;">📡</div>
+      <div class="lp-name">咪咕视频</div>
+      <div class="lp-desc">詹俊/张路解说 · 多视角</div>
     </a>
-    <a href="https://www.xiaohongshu.com" target="_blank" style="text-decoration:none;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.4rem;display:flex;align-items:center;gap:1rem;transition:all 0.2s;" onmouseover="this.style.borderColor='rgba(0,210,255,0.5)';this.style.background='rgba(0,210,255,0.08)';" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.background='rgba(255,255,255,0.06)';">
-      <span style="font-size:2.4rem;">💬</span>
-      <div>
-        <div style="font-size:1.05rem;font-weight:700;color:#1a1a1a;margin-bottom:0.2rem;">小红书</div>
-        <div style="font-size:0.82rem;color:#888;">范志毅解说 · 社区互动 · 全场次</div>
-      </div>
-    </a>
-    <a href="https://www.cctv.com" target="_blank" style="text-decoration:none;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.4rem;display:flex;align-items:center;gap:1rem;transition:all 0.2s;" onmouseover="this.style.borderColor='rgba(0,210,255,0.5)';this.style.background='rgba(0,210,255,0.08)';" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.background='rgba(255,255,255,0.06)';">
-      <span style="font-size:2.4rem;">💻</span>
-      <div>
-        <div style="font-size:1.05rem;font-weight:700;color:#1a1a1a;margin-bottom:0.2rem;">央视网（电脑端）</div>
-        <div style="font-size:0.82rem;color:#888;">网页直达 · 无需 APP · CCTV-5/CCTV-5+</div>
-      </div>
+    <a href="https://www.xiaohongshu.com/worldcup26?wcup_source=web_sidebar_entry" target="_blank">
+      <div class="lp-icon" style="background:#ffeef8;color:#d63384;">📕</div>
+      <div class="lp-name">小红书</div>
+      <div class="lp-desc">比分数据 · 社区互动</div>
     </a>
   </div>
-  <p style="text-align:center;color:#555;font-size:0.78rem;margin-top:1.5rem;">⚡ 中国大陆全部 104 场比赛均为免费直播 · 央视系 / 咪咕 / 小红书 三大官方平台 · 避开抖音/腾讯/爱奇艺（无版权）</p>
+
+  <div class="live-featured">
+    <a href="https://www.yangshipin.cn/live/detail?pid=600223883" target="_blank">
+      <span class="lf-badge">LIVE</span>
+      <span class="lf-title">西班牙 vs 佛得角 · 小组赛 H 组第一轮</span>
+      <span class="lf-arrow">&gt;</span>
+    </a>
+  </div>
+
+  <p class="live-note">全部 104 场免费 · 央视系 / 咪咕 / 小红书 三大官方持权平台</p>
 </section>
 
 
