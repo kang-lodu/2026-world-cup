@@ -204,6 +204,11 @@
     50% { box-shadow: 0 0 0 6px rgba(230,36,41,0); }
   }
 
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
   /* Section */
   .section {
     max-width: 1100px;
@@ -1131,7 +1136,7 @@
         <tr><td class="match-time">03:00</td><td><span class="match-group-tag">I</span></td><td class="match-teams"><span class="flag">🇫🇷</span> 法国 <span class="match-vs">vs</span> 塞内加尔 <span class="flag">🇸🇳</span><span style="font-weight:800;color:#e62429;margin-left:0.3rem;">3-1</span></td><td class="match-venue">波士顿</td></tr>
         <tr><td class="match-time">06:00</td><td><span class="match-group-tag">I</span></td><td class="match-teams"><span class="flag">🇮🇶</span> 伊拉克 <span class="match-vs">vs</span> 挪威 <span class="flag">🇳🇴</span><span style="font-weight:800;color:#e62429;margin-left:0.3rem;">1-4</span></td><td class="match-venue">纽约</td></tr>
         <tr><td class="match-time">09:00</td><td><span class="match-group-tag">J</span></td><td class="match-teams"><span class="flag">🇦🇷</span> 阿根廷 <span class="match-vs">vs</span> 阿尔及利亚 <span class="flag">🇩🇿</span><span style="font-weight:800;color:#e62429;margin-left:0.3rem;">3-0</span></td><td class="match-venue">达拉斯</td></tr>
-        <tr><td class="match-time">12:00</td><td><span class="match-group-tag">J</span></td><td class="match-teams"><span class="flag">🇦🇹</span> 奥地利 <span class="match-vs">vs</span> 约旦 <span class="flag">🇯🇴</span><span style="font-weight:800;color:#e62429;margin-left:0.3rem;">0-0</span></td><td class="match-venue">堪萨斯城</td></tr>
+        <tr><td class="match-time">12:00</td><td><span class="match-group-tag">J</span></td><td class="match-teams"><span class="flag">🇦🇹</span> 奥地利 <span class="match-vs">vs</span> 约旦 <span class="flag">🇯🇴</span><span style="font-weight:800;color:#e62429;margin-left:0.3rem;">1-0</span> <span style="font-size:0.7rem;background:#e62429;color:#fff;padding:0.15rem 0.4rem;border-radius:10px;animation:pulse 1.5s infinite;">比赛中</span></td><td class="match-venue">堪萨斯城</td></tr>
       </table>
     </div>
   </div>
