@@ -965,6 +965,23 @@
 .player-club { font-size: 10px; color: #888; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 @media (max-width:600px) { .roster-players { grid-template-columns: 1fr; } .player-avatar { width: 30px; height: 30px; } .avatar-text { font-size: 12px; } .player-name-cn { font-size: 12.5px; } }
 
+/* 积分榜桌面多列布局 */
+.standings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.standings-grid > div {
+  margin-bottom: 0 !important;
+  min-width: 0;
+}
+@media (max-width: 900px) {
+  .standings-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .standings-grid { grid-template-columns: 1fr; }
+}
+
 /* 积分榜/射手榜 Tab 切换 */
 .tab-switch-btn { cursor: pointer; font-family: inherit; }
 .tab-switch-btn:hover { opacity: 0.85; }
@@ -1524,6 +1541,7 @@
         <button id="tab-btn-scorers" class="tab-switch-btn" onclick="switchStandingsScorers('scorers')" style="padding:0.55rem 1.2rem;border-radius:8px;border:1px solid var(--border);background:var(--card-bg);color:var(--text);font-size:0.85rem;font-weight:500;cursor:pointer;transition:all 0.2s;">འཕེན་མཁན་གྱི་མིང་ཐོ།<br>射手榜</button>
       </div>
       <div id="tab-standings" class="tab-panel-ss" style="display:block;">
+        <div class="standings-grid">
         <div style="margin-bottom:0;">
           <div style="font-size:0.85rem;font-weight:700;color:var(--grass);margin-bottom:0.5rem;">A 组</div>
           <table style="width:100%;border-collapse:collapse;font-size:0.82rem;">
@@ -2227,8 +2245,6 @@
           </table>
         </div>
         <div style="margin-bottom:0;">
-          <div style="font-size:0.85rem;font-weight:700;color:var(--grass);margin-bottom:0.5rem;
-<div style="margin-bottom:0;">
           <div style="font-size:0.85rem;font-weight:700;color:var(--grass);margin-bottom:0.5rem;">L 组</div>
           <table style="width:100%;border-collapse:collapse;font-size:0.82rem;">
             <thead>
@@ -2290,6 +2306,7 @@
               </tr></tbody>
           
 </table>
+        </div>
         </div>
         <p style="font-size:0.72rem;color:var(--text-light);border-top:1px solid #e0e0d8;padding-top:0.6rem;margin-top:0.8rem;">I/J组首轮完赛 · K组葡萄牙1-1刚果(金) ✓ · L组英格兰4-2克罗地亚 ✓ · 加纳1-0巴拿马 ✓ ·  · <span style="background:rgba(27,138,61,0.08);padding:0.1rem 0.4rem;border-radius:3px;">晋级：每组前2 + 8个最佳第3 → 32强</span></p>
       </div>
