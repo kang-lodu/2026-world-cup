@@ -965,21 +965,13 @@
 .player-club { font-size: 10px; color: #888; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 @media (max-width:600px) { .roster-players { grid-template-columns: 1fr; } .player-avatar { width: 30px; height: 30px; } .avatar-text { font-size: 12px; } .player-name-cn { font-size: 12.5px; } }
 
-/* 积分榜桌面多列布局 */
+/* 积分榜单列排列 */
 .standings-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  display: block;
 }
 .standings-grid > div {
-  margin-bottom: 0 !important;
+  margin-bottom: 1rem !important;
   min-width: 0;
-}
-@media (max-width: 900px) {
-  .standings-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 600px) {
-  .standings-grid { grid-template-columns: 1fr; }
 }
 
 /* 积分榜/射手榜 Tab 切换 */
@@ -2308,10 +2300,9 @@
 </table>
         </div>
         </div>
-        <p style="font-size:0.72rem;color:var(--text-light);border-top:1px solid #e0e0d8;padding-top:0.6rem;margin-top:0.8rem;">I/J组首轮完赛 · K组葡萄牙1-1刚果(金) ✓ · L组英格兰4-2克罗地亚 ✓ · 加纳1-0巴拿马 ✓ ·  · <span style="background:rgba(27,138,61,0.08);padding:0.1rem 0.4rem;border-radius:3px;">晋级：每组前2 + 8个最佳第3 → 32强</span></p>
+      <p style="font-size:0.72rem;color:var(--text-light);border-top:1px solid #e0e0d8;padding-top:0.6rem;margin-top:0.8rem;">I/J组首轮完赛 · K组葡萄牙1-1刚果(金) ✓ · L组英格兰4-2克罗地亚 ✓ · 加纳1-0巴拿马 ✓ ·  · <span style="background:rgba(27,138,61,0.08);padding:0.1rem 0.4rem;border-radius:3px;">晋级：每组前2 + 8个最佳第3 → 32强</span></p>
       </div>
-      </div>
-                                                <div id="tab-scorers" class="tab-panel-ss" style="display:none;">
+      <div id="tab-scorers" class="tab-panel-ss" style="display:none;">
       <div style="background:var(--card-bg);border-radius:12px;border:1px solid var(--border);padding:1.5rem;box-shadow:var(--shadow);">
         <h3 style="font-size:1.1rem;font-weight:800;color:var(--gold-dark);margin-bottom:1rem;">འཕེན་མཁན་གྱི་མིང་ཐོ། · 射手榜</h3>
         <p style="font-size:0.7rem;color:var(--text-light);margin-bottom:0.8rem;">截至6月18日 · 梅西3球领跑 · 贾斯特/哈兰德/巴洛贡/姆巴佩/阿亚里/凯恩(1点)/哈弗茨(1点)7人2球并列 · 阿姆里/伊萨克/乌勒万等22人各1球 · TOP 30 · 来源: 网易彩票
@@ -2569,7 +2560,8 @@
 </tbody>
   </table>
       </div>
-      </div><!-- Stadiums -->
+      </div>
+    </div>
 <section class="section" id="stadiums">
   <div class="section-header">
     <div class="section-icon">🏟️</div>
